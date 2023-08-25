@@ -19,6 +19,7 @@ from rest_framework.routers import DefaultRouter
 from app.views import*
 
 
+
 router = DefaultRouter()
 router.register(r'courses', CourseViewSet)
 router.register(r'students', StudentViewSet)
@@ -27,5 +28,9 @@ router.register(r'halltickets', HallTicketViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',index, name='index'),
      path('', include(router.urls)),
+     path('student_info/', student_info, name='student_info'),
+    path('exam_selection/', exam_selection, name='exam_selection'),
+    path('hall_ticket_display/',hall_ticket_display, name='hall_ticket_display'),
 ]

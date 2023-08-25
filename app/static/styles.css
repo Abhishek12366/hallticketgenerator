@@ -1,0 +1,88 @@
+/* Common styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header styling */
+.header-alt {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-title {
+    margin: 0;
+}
+
+/* Main content styling */
+.main-content-alt {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.options-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 400px;
+}
+
+.options-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.options-link {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.options-link.right {
+    margin-left: auto;
+}
+
+.options-link:hover {
+    background-color: #0056b3;
+}

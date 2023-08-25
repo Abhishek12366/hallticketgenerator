@@ -1,0 +1,118 @@
+/* Common styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation Classes */
+/* ... */
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Main content container */
+main {
+    padding: 2em;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Form styling */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-button:hover {
+    background-color: #555;
+}
+
+/* Hall ticket styling */
+.hall-ticket-container {
+    text-align: center;
+    padding: 2em;
+}
+
+.hall-ticket-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hall-ticket {
+    border: 1px solid #ccc;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hall-ticket-detail {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.hall-ticket-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 1em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hall-ticket-button:hover {
+    background-color: #555;
+}
+
+

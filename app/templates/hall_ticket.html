@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Hall Ticket</title>
+</head>
+<body>
+    <div class="hall-ticket-container fade-in">
+        <h2 class="hall-ticket-title">Your Hall Ticket</h2>
+        <div class="hall-ticket">
+            <p class="hall-ticket-detail"><span class="detail-label">Name:</span> </p>
+            <p class="hall-ticket-detail"><span class="detail-label">Exam:</span> </p>
+            <p class="hall-ticket-detail"><span class="detail-label">Exam Date:</span> </p>
+            <p class="hall-ticket-detail"><span class="detail-label">Exam Time:</span></p>
+            <p class="hall-ticket-detail"><span class="detail-label">Center:</span> </p>
+            
+        </div>
+        <button class="hall-ticket-button btn-print">Print</button>
+        <a href="{% url 'download_hall_ticket' %}" class="hall-ticket-button btn-download">Download PDF</a>
+    </div>
+</body>
+</html>

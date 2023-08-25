@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Student Information</title>
+</head>
+<body>
+    <div class="form-container slide-in">
+        <h2 class="form-title">Enter Student Information</h2>
+        <form class="form">
+            {% csrf_token %}
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-input" type="text" id="name" name="name" required>
+            <label class="form-label" for="address">Address:</label>
+            <textarea class="form-input" id="address" name="address" required></textarea>
+            <label class="form-label" for="aadhaar">Aadhaar Number:</label>
+            <input class="form-input" type="text" id="aadhaar" name="aadhaar" required>
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

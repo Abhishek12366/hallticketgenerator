@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Exam Selection</title>
+</head>
+<body>
+    <div class="form-container slide-in">
+        <h2 class="form-title">Select Exam</h2>
+        <form class="form">
+            {% csrf_token %}
+            <label class="form-label" for="exam">Select Exam:</label>
+            <select class="form-input" id="exam" name="exam" required>
+                <option value="exam1">Exam 1</option>
+                <option value="exam2">Exam 2</option>
+               
+            </select>
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SuperAdmin Panel</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'admin_request_list' %}">Admin Requests</a></li>
+            <li><a href="{% url 'admin_list' %}">Admins</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

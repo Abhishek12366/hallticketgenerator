@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Admin Requests</h1>
+    <ul>
+        {% for admin_request in admin_requests %}
+            <li>
+                <p>Name: {{ admin_request.name }}</p>
+                <p>Email: {{ admin_request.email }}</p>
+                {% if admin_request.is_accepted %}
+                    <p>Status: Accepted</p>
+                {% else %}
+                    <p>Status: Pending</p>
+                    <form method="post" action="{% url 'accept_admin_request' admin_request.pk %}">
+                        {% csrf_token %}
+                        <button type="submit">Accept</button>
+                    </form>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
